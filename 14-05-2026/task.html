@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Fest Website</title>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+
+        <h1>🎉 ABC College Fest 2026 🎉</h1>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <!-- MAIN SECTION -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home">
+
+            <h2>Welcome to Annual College Fest</h2>
+
+            <p>
+                <b>Experience</b> the most
+                <i>exciting</i> and
+                <u>memorable</u> event of the year.
+                <mark>Join us now!</mark>
+            </p>
+
+            <img src="images/banner.jpg"
+                 alt="College Fest Banner"
+                 width="100%"
+                 height="400">
+
+        </section>
+
+        <hr>
+
+        <!-- EVENTS SECTION -->
+        <section id="events">
+
+            <h2>Fest Events</h2>
+
+            <!-- ARTICLE -->
+            <article>
+
+                <h3>Technical Events</h3>
+
+                <ol>
+                    <li>Coding Competition</li>
+                    <li>Hackathon</li>
+                    <li>Robotics Challenge</li>
+                </ol>
+
+                <h3>Non-Technical Events</h3>
+
+                <ul>
+                    <li>Dance Competition</li>
+                    <li>Music Concert</li>
+                    <li>Photography Contest</li>
+                </ul>
+
+                <h3>Event Details</h3>
+
+                <dl>
+                    <dt><b>Hackathon</b></dt>
+                    <dd>24-hour coding challenge.</dd>
+
+                    <dt><b>Dance Battle</b></dt>
+                    <dd>Group and solo dance performances.</dd>
+
+                    <dt><b>Music Night</b></dt>
+                    <dd>Live band performances and DJ.</dd>
+                </dl>
+
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- SCHEDULE TABLE -->
+        <section id="schedule">
+
+            <h2>Fest Schedule</h2>
+
+            <table border="2" cellspacing="5" cellpadding="10">
+
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Venue</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Day 1</td>
+                    <td>10 AM</td>
+                    <td>Inauguration</td>
+                    <td>Main Hall</td>
+                </tr>
+
+                <tr>
+                    <td>2 PM</td>
+                    <td>Coding Contest</td>
+                    <td>Lab 1</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Day 2</td>
+                    <td>11 AM</td>
+                    <td>Dance Competition</td>
+                    <td>Auditorium</td>
+                </tr>
+
+                <tr>
+                    <td>4 PM</td>
+                    <td>Music Concert</td>
+                    <td>Open Ground</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" align="center">
+                        Final Prize Distribution at 6 PM
+                    </td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- GALLERY SECTION -->
+        <section id="gallery">
+
+            <h2>Gallery</h2>
+
+            <figure>
+                <img src="images/img1.jpg" alt="Event 1" width="200" height="150">
+                <figcaption>Dance Performance</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/img2.jpg" alt="Event 2" width="200" height="150">
+                <figcaption>Music Concert</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/img3.jpg" alt="Event 3" width="200" height="150">
+                <figcaption>Coding Contest</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/img4.jpg" alt="Event 4" width="200" height="150">
+                <figcaption>Hackathon</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/img5.jpg" alt="Event 5" width="200" height="150">
+                <figcaption>Photography</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/img6.jpg" alt="Event 6" width="200" height="150">
+                <figcaption>Award Ceremony</figcaption>
+            </figure>
+
+        </section>
+
+        <hr>
+
+        <!-- AUDIO SECTION -->
+        <section>
+
+            <h2>Welcome Audio</h2>
+
+            <audio controls autoplay loop muted>
+
+                <source src="audio/welcome.mp3" type="audio/mpeg">
+
+                <source src="audio/welcome.ogg" type="audio/ogg">
+
+                Your browser does not support audio.
+
+            </audio>
+
+        </section>
+
+        <hr>
+
+        <!-- VIDEO SECTION -->
+        <section>
+
+            <h2>Fest Videos</h2>
+
+            <video controls autoplay poster="images/poster.jpg"
+                   width="400" height="250">
+
+                <source src="video/intro.mp4" type="video/mp4">
+
+                <source src="video/intro.webm" type="video/webm">
+
+            </video>
+
+            <video controls width="400" height="250">
+
+                <source src="video/highlights.mp4" type="video/mp4">
+
+                <source src="video/highlights.webm" type="video/webm">
+
+            </video>
+
+        </section>
+
+        <hr>
+
+        <!-- REGISTRATION FORM -->
+        <section id="register">
+
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <label>Full Name:</label><br>
+                <input type="text" required><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" required><br><br>
+
+                <label>Password:</label><br>
+                <input type="password"><br><br>
+
+                <label>Phone Number:</label><br>
+                <input type="tel"><br><br>
+
+                <label>Date of Birth:</label><br>
+                <input type="date"><br><br>
+
+                <label>Gender:</label><br>
+
+                <input type="radio" name="gender"> Male
+
+                <input type="radio" name="gender"> Female
+
+                <br><br>
+
+                <label>Select Events:</label><br>
+
+                <input type="checkbox"> Coding Contest
+
+                <input type="checkbox"> Dance
+
+                <input type="checkbox"> Music
+
+                <br><br>
+
+                <label>Department:</label><br>
+
+                <select>
+
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>MECH</option>
+
+                </select>
+
+                <br><br>
+
+                <label>Address:</label><br>
+
+                <textarea rows="5" cols="30"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Register">
+
+                <input type="reset" value="Clear">
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- HTML ENTITIES -->
+        <section>
+
+            <h2>HTML Entities</h2>
+
+            <p>Copyright: &copy;</p>
+
+            <p>Trademark: &trade;</p>
+
+            <p>Euro: &euro;</p>
+
+            <p>Rupee: &#8377;</p>
+
+        </section>
+
+        <hr>
+
+        <!-- ASIDE SECTION -->
+        <aside>
+
+            <h3>Fest Announcement</h3>
+
+            <p>
+                Registrations close on 25th May 2026.
+            </p>
+
+        </aside>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: abccollegefest@gmail.com</p>
+
+        <p>Phone: +91 9876543210</p>
+
+        <p>
+            Follow us:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+
+        <p>&copy; 2026 ABC College Fest. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
