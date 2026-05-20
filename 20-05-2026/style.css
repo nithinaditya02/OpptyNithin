@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(226, 240, 237);
+    align-self: center;
+    font-variant: small-caps;
+    font-family: fantasy;
+}
+
+h3 {
+    color: rgb(83, 5, 94);
+    font-weight: 300;
+    font-size: x-large;
+    margin-top: auto;
+    border-radius: 30px;
+}
+
+h4 {
+    color: tomato;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    size: 20px;
+    color: rgb(61, 0, 102);
+}
+
+* { margin: 100; padding: 100; box-sizing:content-box; }
