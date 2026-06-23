@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge | About Us</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+     .header{
+        background-image: url("https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/about-title-image-1.jpg");
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+     .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.links nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.links a{
+    text-decoration: none;
+    color:#3a3836;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.links a:hover{
+    color: #b97c5e;
+}
+.icons a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.icons a:hover{
+ color: #b97c5e;
+}
+.about{
+    position: absolute;
+    top: 30%;
+    left:35%;
+    transform: translateY(-50%);
+}
+.about h2{
+    font-size: 80px;
+    color: #000000;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.pot{
+    background-color: rgb(248, 239, 227);
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.what {
+    text-align: left;
+}
+.whatt{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    height: 100%;
+}
+.whatt h1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.whatt h4{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.demobox{
+    position: fixed;
+    right: 0;
+    top: 300px;
+    width: 180px;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+.demobox a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.buybox{
+    position: fixed;
+    right: 0;
+    top: 390px;
+    width:180px;
+    height: 70px;
+    background-color:#f21e4e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+.buybox a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pottery{
+    background-color: #ffffff;
+    height: 600px;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.line{
+    display: flex;
+    gap: 100px;
+    width: fit-content;
+    margin: auto;
+}
+.line h4{
+    color: #9a4e1f;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.line p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.newsletter{
+    height: 500px;
+    background-image: url("https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/home-parallax-1-1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.news{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.news h1{
+    color: white;
+    font-size: 70px;
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 40px;
+}
+
+.subscribebox{
+    display: flex;
+}
+
+.subscribebox input{
+    width: 600px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 2px solid white;
+    background: transparent;
+}
+
+.subscribebox button{
+    width: 250px;
+    height: 64px;
+    border: none;
+    background: #f5f0d8;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.footerlinks{
+    background-color: #faf4ed;
+    width: 100%;
+    height: 500px;
+}
+.l1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.l001,
+.l002,
+.l003,
+.l004{
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+}
+.l1 a{
+    text-decoration: none;
+    border-bottom: none;
+    color: #81818b;
+     display: block;
+    margin-bottom: 1px;
+
+}
+.l1 a:hover{
+    color: #b97c5e;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: #d8d8d8;
+    width: 90%;
+    margin: 50px auto;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.fot a{
+    text-decoration: none;
+    border-bottom: none;
+    color: #918381;
+    gap: 10px;
+}
+.fot a:hover{
+    color: #9a4e1f;
+}
+.fot p{
+    color: #918381;
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 80px;
+}
+.social a{
+    text-decoration: none;
+    border-bottom: none;
+    color:#918381
+}
+.topbtn{
+    width: 30px;
+    height: 30px;
+    background-color: #b97c5e;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+</style>
+<body>
+    <div class="main">
+
+        <div class="header">
+
+            <div class="menu">
+                
+                <div class="logo">
+                   <a href="https://bridge155.qodeinteractive.com/"> <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/logo.png" alt=""></a>
+                </div>
+
+                <div class="links">
+                    <nav>
+                        <a href="../Day 26 (18-06-2026)/Pottery_home.html">HOME</a>
+                        <a href="../Day 26 (18-06-2026)/Potter_about.html" target="_blank">ABOUT</a>
+                        <a href="https://bridge155.qodeinteractive.com/shop/">SHOP</a>
+                        <a href="https://bridge155.qodeinteractive.com/contact-us/">CONTACT</a>
+                    </nav>
+                </div>
+
+                <div class="icons" >
+                        <a href="https://www.facebook.com/QodeInteractive/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/qodeinteractive/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/QodeInteractive" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://bridge155.qodeinteractive.com/cart/"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                    
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="about">
+                <h2>About Us</h2>
+                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+
+            </div>
+
+        </div>
+
+        <div class="pot">
+
+            <div class="whatt">
+            <div class="what">
+                <h1>What we do</h1>
+                <h4>Mei invenire periculis ei, offendit mediocrem ne sea, eos <br> suas elitr everti ea. Per vidit rebum quodsi id. Pericula <br>interpretaris ea pri, prima conguen terpretaris prim. <br> Ipsum, nec sagittis sem nibh id elit. Duis sed odio sit <br> amet nibh vulputate cursus a sit amet mauris. <br> <br>
+                    Morbi accumsan ipsum velit. Nam nec tellus a odio <br>tincidunt auctor  accumsan ipsum velit</h4>
+                    <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/about-single-image-2.png" alt="">
+                </div>
+
+            <div class="pic">
+                <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/about-single-image-1.jpg" alt="" width="500px" height="300px">
+            </div>
+
+            </div>
+
+             <div class="demobox">
+                <a href="https://bridgelanding.qodeinteractive.com/?_gl=1%2A4zsewm%2A_gcl_au%2ANjU3MDg3Njc4LjE3ODE3NTc5OTU.&_ga=2.68234642.246528273.1782190383-1314278922.1781757995#demos-section" target="_blank">
+                <h2>630+</h2>
+                <p>Bridge demos</p></a>
+            </div>
+
+            <div class="buybox">
+                 <a href="https://themeforest.net/checkout/114857940/create_account?_ga=2.29615548.246528273.1782190383-1314278922.1781757995&aca=httpsbridge155qodeinteractivecom&aid=qode&aso=httpsbridge155qodeinteractivecom&clickid=TccwIz1rQxyZUy3W-x3xMz-tUkuQxC1Rq1rKVw0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1306827&mp_value1=&utm_campaign=af_impact_radius_1306827&utm_medium=affiliate&utm_source=impact_radius" target="_blank">
+                 <i class="fa-solid fa-bag-shopping"></i>
+                 <span>BUY NOW $69</span></a>
+            </div>
+
+        </div>
+
+         <div class="pottery">
+
+            <div class="line">
+
+                <div class="img1">
+                    <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/custom-icon-1.png" alt="">
+                    <h4>Pottery Classes</h4>
+                    <p>Adipiscing contentiones te sea,<br> at per vero oratio corrumpit. Ne <br> vocent impetus usu. Eos hinc <br>senserit et.</p>
+                </div>
+
+                <div class="img2">
+                    <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/custom-icon-2.png" alt="">
+                    <h4>Design Process</h4>
+                    <p>Adipiscing contentiones te sea,<br> at per vero oratio corrumpit. Ne <br> vocent impetus usu. Eos hinc  <br> senserit et.</p>
+                </div>
+
+                <div class="img3">
+                    <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/custom-icon-3.png" alt="">
+                    <h4>Gift Cards</h4>
+                    <p>Adipiscing contentiones te sea,<br> at per vero oratio corrumpit. Ne <br> vocent impetus usu. Eos hinc <br> senserit et.</p>
+                </div>
+
+                <div class="img4">
+                    <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/custom-icon-4.png" alt="">
+                    <h4>Pottery Wheel</h4>
+                    <p>Adipiscing contentiones te sea, <br> at per vero oratio corrumpit. Ne <br> vocent impetus usu. Eos hinc <br> senserit et.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+       
+
+        <div class="newsletter">
+
+            <div class="news">
+            <h1>Subscribe to Newsletter</h1>
+
+                <div class="subscribebox">
+                <input type="email" placeholder="E-mail Address">
+                <button>SUBSCRIBE</button>
+                </div>
+
+            </div>
+
+        </div>
+         <div class="footerlinks">
+
+            <div class="l1">
+              <div class="l001">
+                <h4>CUSTOMER SERVICE</h4>
+                <a href="https://bridge155.qodeinteractive.com/contact-us/">Help & Contact</a> 
+                <a href="https://bridge155.qodeinteractive.com/my-account/">Return & Refunds</a> 
+                <a href="https://bridge155.qodeinteractive.com/shop/">Online Stores</a> 
+                <a href="https://bridge155.qodeinteractive.com/my-account/edit-account/">Terms & Conditions</a>
+              </div>
+
+              <div class="l002">
+                <h4>COMPANY</h4>
+                <a href="https://bridge155.qodeinteractive.com/about-us/">About Us</a> 
+                <a href="https://bridge155.qodeinteractive.com/#">Blog</a> 
+                <a href="https://bridge155.qodeinteractive.com/my-account/edit-address/">Order Tracking</a> 
+                <a href="https://bridge155.qodeinteractive.com/#">FAQs</a> 
+                <a href="https://bridge155.qodeinteractive.com/contact-us/">Contact</a>
+                <a href="https://bridge155.qodeinteractive.com/my-account/">Login</a>
+              </div>
+
+              <div class="l003">
+                <h4>SOCIAL MEDIA</h4>
+                <a href="https://x.com/QodeInteractive">Twitter</a> 
+                <a href="https://www.instagram.com/qodeinteractive/">Instagram</a> 
+                <a href="https://www.tumblr.com/">Tumblr</a> 
+                <a href="https://www.pinterest.com/qodeinteractive/">Pinterest</a>
+              </div>
+
+              <div class="l004">
+                <h4>ARCHIVE</h4>
+                <a href="https://bridge155.qodeinteractive.com/product-category/clay/">Clay</a> 
+                <a href="https://bridge155.qodeinteractive.com/product-category/design/">Design</a>
+                <a href="https://bridge155.qodeinteractive.com/product-category/new/">New</a>
+                <a href="https://bridge155.qodeinteractive.com/product-category/plaster/">Plaster</a> 
+                <a href="https://bridge155.qodeinteractive.com/product-category/vision/">Vision</a>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div class="foot">
+                
+                <div class="fot">
+                    <p>&copy;<a href="https://qodeinteractive.com/?_gl=1%2Ab20qfa%2A_gcl_au%2ANjU3MDg3Njc4LjE3ODE3NTc5OTU.&_ga=2.95094303.246528273.1782190383-1314278922.1781757995" target="_blank">Qode Interactive,</a> All Rights Reserved</p>
+                </div>
+
+                <div>
+                    <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/footer-bottom-image-1.png" alt="">
+                </div>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/qodeinteractive/">INSTAGRAM</a>
+                    <a href="https://www.facebook.com/QodeInteractive/">FACEBOOK</a>
+
+                    <a href="#top" class="topbtn">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="backtop">
+            <a href="#top" class="backtop">↑ Back to Top</a></div>
+        </div> -->
+
+    </div>
+</body>
+</html>
