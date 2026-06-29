@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 40px;
+}
+
+.box{
+    width:160px;
+    height:100px;
+    background-color: orange;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    border-radius:10px;
+    transition:1s;
+    cursor:pointer;
+    border: 1px solid black;
+}
+
+
+.scale:hover{
+    background-color: black;
+    transform:scale(1.3);
+}
+
+
+.linear{
+    transition-timing-function:linear;
+}
+.linear:hover{
+    background-color: black;
+    transform:translateX(50px);
+}
+
+.ease{
+    transition-timing-function:ease;
+}
+.ease:hover{
+    background-color: black;
+    transform:translateY(50px);
+}
+
+.easein{
+    transition-timing-function:ease-in;
+}
+.easein:hover{
+    background-color: black;
+    transform:translateX(50px);
+}
+
+.easeout{
+    transition-timing-function:ease-out;
+}
+.easeout:hover{
+    background-color: black;
+    transform:translateX(50px);
+}
+
+.easeinout{
+    transition-timing-function:ease-in-out;
+}
+.easeinout:hover{
+    background-color: black;
+    transform:translateX(50px);
+}
+
+
+.scalex:hover{
+    background-color: black;
+    transform:scaleX(1.5);
+}
+
+
+.scaley:hover{
+    background-color: black;
+    transform:scaleY(1.5);
+}
+
+
+.scale3d:hover{
+    background-color: black;
+    transform:scale3d(1.2,1.5,1);
+}
+
+.rotatex:hover{
+    background-color: black;
+    transform:rotateX(180deg);
+}
+
+
+.rotatey:hover{
+    background-color: black;
+    transform:rotateY(180deg);
+}
+
+
+.rotate:hover{
+    background-color: black;
+    transform:rotate(45deg);
+}
+
+
+.matrix:hover{
+    background-color: black;
+    transform:matrix(12,0.3,0.3,1,20,10);
+}
+
+
+.skewx:hover{
+    background-color: black;
+    transform:skewX(20deg);
+}
+
+
+.skewy:hover{
+    background-color: black;
+    transform:skewY(20deg);
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="box scale">Scale</div>
+        <div class="box linear">Linear</div>
+        <div class="box ease">Ease</div>
+        <div class="box easein">Ease In</div>
+        <div class="box easeout">Ease Out</div>
+        <div class="box easeinout">Ease In Out</div>
+
+        <div class="box scalex">Scale X</div>
+        <div class="box scaley">Scale Y</div>
+        <div class="box scale3d">Scale3D</div>
+
+        <div class="box rotatex">Rotate X</div>
+        <div class="box rotatey">Rotate Y</div>
+        <div class="box rotate">Rotate</div>
+
+        <div class="box matrix">Matrix</div>
+        <div class="box skewx">Skew X</div>
+        <div class="box skewy">Skew Y</div>
+
+    </div>
+</body>
+</html>
