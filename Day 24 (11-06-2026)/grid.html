@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: orangered;
+        }
+        .line1{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr; */
+            /* gap: 10px; */
+            justify-content: center;
+            width: fit-content;
+           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            border-radius: 10%;
+        }
+        .box2{
+            width: 500px;
+            height: 200px;
+            background-color: rgb(51, 192, 235);
+            border-radius: 10px;
+        }
+        .container{
+    display:grid;
+
+    grid-template-columns:200px 1fr 1fr;
+    grid-template-rows:80px 300px 80px;
+
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+
+    gap:10px;
+}
+
+.header{
+    grid-area:header;
+    background:red;
+}
+
+.sidebar{
+    grid-area:sidebar;
+    background:blue;
+}
+
+.content{
+    grid-area:content;
+    background:green;
+}
+
+.footer{
+    grid-area:footer;
+    background:black;
+    color:white;
+}
+    </style>
+</head>
+<body>
+<div class="main">
+
+    <div class="container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+    </div>
+
+    <!-- <div class="line1">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+</div> -->
+
+</div>
+
+</body>
+</html>

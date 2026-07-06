@@ -89,11 +89,13 @@
     color: #ffca06;
     font-size: 30px;
     text-align: left;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 }
 .cbnimg h4{
     position: absolute;
     font-weight: lighter;
     color: white;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 }
 .cbnimg h4{
     position: absolute;
@@ -355,14 +357,183 @@
     display: block;
 }
 .gallery-section{
-    background-color: antiquewhite;
-    width: 100%;
-    height: 400px;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
 }
-.gall{
-    display: grid;
-    grid-template-columns: (2fr,1fr,1fr);
+
+.gallery-left{
+    width: 65%;
+}
+
+.gallery-images{
+    display: flex;
     gap: 20px;
+}
+
+.gallery-card{
+    width: 250px;
+    height: 240px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery-card h3{
+    font-style: italic;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 13px;
+    line-height: 40px;
+    margin-top: 180px;
+}
+
+.card1{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img01.jpg");
+     background-size: cover;
+     background-position: center;
+}
+
+.card1:hover{
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img01.jpg");
+     background-size: cover;
+     background-position: center;
+}
+
+.card2{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img02.jpg");
+     background-size: cover;
+     background-position: center;
+}
+
+.card2:hover{
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img02.jpg");
+     background-size: cover;
+    background-position: center;
+}
+
+.card3{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img06.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card3:hover{
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img06.jpg");
+     background-size: cover;
+    background-position: center;
+}
+
+.profile-image{
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("https://pbs.twimg.com/profile_images/1661933747271524352/RpQ2zGnQ_normal.jpg") center/cover;
+}
+
+.twitter-icon{
+    font-size: 25px;
+    padding: 10px 7px;
+    background-color: rgba(91,195,237,0.8);
+    border-radius: 50%;
+    color: white;
+    visibility: hidden;
+}
+
+.profile-header{
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgba(128,128,128,0.3);
+}
+
+.profile-title,
+.tweet-header{
+    display: flex;
+    gap: 10px;
+}
+
+.fa-circle-check{
+    color: skyblue;
+    margin-top: 20px;
+}
+
+.profile-header img{
+    border-radius: 50%;
+}
+
+.follow-btn{
+    display: flex;
+    padding: 10px 10px 5px;
+    background-color: rgb(38,86,159);
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.profile-details > p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.tweet-card{
+    display: flex;
+    gap: 20px;
+    color: gray;
+}
+
+.tweet-header{
+    color: rgba(0,0,0,0.7);
+}
+
+.tweet-header > p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#tweet{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.tweet-content > p{
+    font-size: 13px;
+    width: 300px;
+    margin-top: -10px;
+}
+
+.tweet-actions{
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+}
+
+.tweet-actions p{
+    margin-top: 0;
+}
+
+.load-more{
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    background-color: rgb(226,226,226);
+    color: black;
+    padding: 5px 0;
+}
+
+.profile-header:hover{
+    color: #FFCA06;
+}
+
+.profile-header:hover .twitter-icon{
+    visibility: visible;
 }
 .jail{
     background-color: #ecfee9;
@@ -573,7 +744,7 @@
 
         </div>
 
-        <div class="gallery-section">
+        <!-- <div class="gallery-section">
 
             <div class="gallery-left">
 
@@ -591,7 +762,114 @@
             </div>
 
             <div class="gallery-right">
-            <!-- Twitter/X embed or iframe goes here -->
+            Twitter/X embed or iframe goes here
+            </div>
+
+        </div> -->
+
+        <div class="gallery-section">
+
+            <div class="gallery-left">
+
+                <div class="gallery-header">
+                    <h3>PHOTO GALLERY</h3>
+                    <h5>VIEW ALL</h5>
+                 </div>
+
+            <div class="gallery-images">
+
+            <div class="gallery-card card1">
+                <h3>Chandrababu Naidu at Party Office,...</h3>
+            </div>
+
+            <div class="gallery-card card2">
+                <h3>NCBN at the first swearing-in of NTR</h3>
+            </div>
+
+                <div class="gallery-card card3">
+                <h3>NCBN as a student at SV University</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="twitter-feed">
+
+        <div class="profile-header">
+
+            <div class="profile-image">
+                <div class="twitter-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="profile-details">
+
+                <div class="profile-title">
+                    <h4>N Chandrababu Naidu</h4>
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <p class="follow-btn">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        Follow
+                    </p>
+                </div>
+
+                <p>
+                    Chief Minister of Andhra Pradesh | Member of Legislative Assembly, Kuppam | President, Telugu Desam Party
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="tweet-card">
+
+            <img src="https://pbs.twimg.com/profile_images/1661933747271524352/RpQ2zGnQ_normal.jpg"
+                 alt=""
+                 width="50"
+                 height="50"
+                 style="margin-top:10px;">
+
+            <div class="tweet-content">
+
+                <div class="tweet-header">
+                    <h5>N Chandrababu Naidu</h5>
+                    <i class="fa-solid fa-circle-check" style="color:skyblue;"></i>
+                    <p>@ncbn</p>
+                    <p>1 Jul</p>
+                    <i class="fa-brands fa-x-twitter" id="tweet"></i>
+                </div>
+
+                <p class="tweet-text">
+                    On the occasion of Doctors' Day, I extend my heartfelt wishes and express my deepest gratitude to all our doctors. Their dedication to humanity and commitment to healing are truly inspiring and admirable. Even in the most challenging times, they continue to serve with compassion.
+                </p>
+
+                <div class="tweet-actions">
+
+                    <i class="fa-regular fa-comment"></i>
+
+                    <p>
+                        <i class="fa-solid fa-retweet"></i> 86
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-heart"></i> 556
+                    </p>
+
+                    <p>X</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+                <div class="load-more">
+            Load More
+                </div>
+
             </div>
 
         </div>
@@ -668,7 +946,7 @@
 
                 <div class="img4">
                     <a href="https://ncbn.info/chandrababu-naidu-looks-east-to-revive-andhra-pradesh/">
-                    <img src="https://ncbn.info/wp-content/uploads/2022/11/japan-visit.jpg" alt="" >
+                    <img src="https://ncbn.info/wp-content/uploads/2022/11/japan-visit.jpg" alt="" width="250px" >
                     <h3>Chandrababu Naidu looks east to revive Andhra Pradesh.....</h3>
                     </a>
                     <p>ogendra Kalavalapalli | LiveMint.com | June 02, 2015 Electioneering was at its peak in Japan when Andhra Pradesh (AP) chief minister N..... </p>

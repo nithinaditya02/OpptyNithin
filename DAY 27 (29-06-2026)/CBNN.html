@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nara Chandra Babu page</title>
+     <link rel="icon" href="https://ncbn.info/wp-content/uploads/2022/08/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+.header{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.links nav{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.links a:hover{
+    border-radius: 10%;
+    background-color: black;
+    color: rgb(255, 255, 93);
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icons a{
+    color: black;
+}
+.icons a:hover{
+    color:rgb(255, 255, 93);
+    background-color: black;
+    border-radius: 50%;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 8px 15px;
+    width: 200px;
+}
+.search input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+.search i{
+    color: gray;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cbnimg{
+    position: relative;
+     width: 100%;
+    height: 600px;
+    /* background-image: url("https://ncbn.info/wp-content/uploads/2022/08/slider01.jpg"); */
+     background:
+        linear-gradient( rgba(193, 255, 143, 0.55), rgba(255, 255, 51, 0.55) ),
+        url("https://ncbn.info/wp-content/uploads/2022/08/slider01.jpg");
+    color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+}
+.cbnimg h1{
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    color: #ffca06;
+    font-size: 30px;
+    text-align: left;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+}
+.cbnimg h4{
+    position: absolute;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+}
+.cbnimg h4{
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    color: white;
+    font-weight:500;
+    line-height: 28px;
+    text-align: left;
+}
+.btn button{
+    position: absolute;
+    top: 480px;
+    right: 390px;
+    background-color: transparent;
+    color:#ffca06 ;
+    border: 2px solid #ffca06;
+    padding: 10px 20px;
+
+}
+.btn button:hover{
+    color: black;
+    background-color: #ffca06;
+}
+.latest{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.a2 a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a2 a:hover{
+    color: rgb(250, 71, 101);
+}
+.imgs{
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.img1 img{
+    width: 100%;
+    height: 220px;
+    /* object-fit: cover; */
+    display: block;
+    transition: 0.4s;
+}
+
+.img1 img:hover{
+    transform: scale(1.05);
+}
+.aa a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+}
+.aa a:hover{
+    color: rgb(250, 71, 101);
+}
+.img1 a {
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img1 h1{
+    text-align: center;
+}
+.o1{
+    display: flex;
+    gap: 160px;
+}
+.o2  h3{
+    font-size: small;
+}
+.o3 a{
+    font-weight: bold;
+    font-size: small;
+}
+.o3 a:hover{
+    color:rgb(250, 71, 101) ;
+}
+.img2 img{
+    width: 100%;
+    height: 220px;
+    /* object-fit: cover; */
+    display: block;
+    transition: 0.4s;
+}
+
+.img2 img:hover{
+    transform: scale(1.05);
+}
+.ab a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+}
+.ab a:hover{
+    color: rgb(250, 71, 101);
+}
+.img2 a {
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img2 h1{
+    text-align: center;
+}
+.o4{
+    display: flex;
+    gap: 160px;
+}
+.o5  h3{
+    font-size: small;
+}
+.o6 a{
+    font-weight: bold;
+    font-size: small;
+}
+.o6 a:hover{
+    color:rgb(250, 71, 101) ;
+}
+.img3 img{
+    width: 100%;
+    height: 220px;
+    /* object-fit: cover; */
+    display: block;
+    transition: 0.4s;
+}
+
+.img3 img:hover{
+    transform: scale(1.05);
+}
+.ac a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+}
+.ac a:hover{
+    color: rgb(250, 71, 101);
+}
+.img3 a {
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img3 h1{
+    text-align: center;
+}
+.o7{
+    display: flex;
+    gap: 160px;
+}
+.o7  h3{
+    font-size: small;
+}
+.o8 a{
+    font-weight: bold;
+    font-size: small;
+}
+.o9 a:hover{
+    color:rgb(250, 71, 101) ;
+}
+.img4 img{
+    width: 100%;
+    height: 220px;
+    /* object-fit: cover; */
+    display: block;
+    transition: 0.4s;
+}
+
+.img4 img:hover{
+    transform: scale(1.05);
+}
+.ad a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+}
+.ad a:hover{
+    color: rgb(250, 71, 101);
+}
+.img4 a {
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img4 h1{
+    text-align: center;
+}
+.o10{
+     top: 100px;
+    display: flex;
+    gap: 160px;
+}
+.o10  h3{
+    font-size: small;
+}
+.o11 {
+   top: 100px;
+    font-weight: bold;
+    font-size: small;
+}
+.o12 a:hover{
+    color:rgb(250, 71, 101) ;
+}
+.imgs{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 20px;
+    width: 99%;
+}
+.img1,
+.img2,
+.img3,
+.img4{
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.gallery-section{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.gallery-left{
+    width: 65%;
+}
+
+.gallery-images{
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-card{
+    width: 250px;
+    height: 240px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery-card h3{
+    font-style: italic;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 13px;
+    line-height: 40px;
+    margin-top: 180px;
+}
+
+.card1{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img01.jpg");
+     background-size: cover;
+     background-position: center;
+}
+
+.card1:hover{
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img01.jpg");
+     background-size: cover;
+     background-position: center;
+}
+
+.card2{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img02.jpg");
+     background-size: cover;
+     background-position: center;
+}
+
+.card2:hover{
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img02.jpg");
+     background-size: cover;
+    background-position: center;
+}
+
+.card3{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img06.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card3:hover{
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("https://ncbn.info/wp-content/uploads/2022/08/img06.jpg");
+     background-size: cover;
+    background-position: center;
+}
+
+.profile-image{
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("https://pbs.twimg.com/profile_images/1661933747271524352/RpQ2zGnQ_normal.jpg") center/cover;
+}
+
+.twitter-icon{
+    font-size: 25px;
+    padding: 10px 7px;
+    background-color: rgba(91,195,237,0.8);
+    border-radius: 50%;
+    color: white;
+    visibility: hidden;
+}
+
+.profile-header{
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgba(128,128,128,0.3);
+}
+
+.profile-title,
+.tweet-header{
+    display: flex;
+    gap: 10px;
+}
+
+.fa-circle-check{
+    color: skyblue;
+    margin-top: 20px;
+}
+
+.profile-header img{
+    border-radius: 50%;
+}
+
+.follow-btn{
+    display: flex;
+    padding: 10px 10px 5px;
+    background-color: rgb(38,86,159);
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.profile-details > p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.tweet-card{
+    display: flex;
+    gap: 20px;
+    color: gray;
+}
+
+.tweet-header{
+    color: rgba(0,0,0,0.7);
+}
+
+.tweet-header > p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#tweet{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.tweet-content > p{
+    font-size: 13px;
+    width: 300px;
+    margin-top: -10px;
+}
+
+.tweet-actions{
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+}
+
+.tweet-actions p{
+    margin-top: 0;
+}
+
+.load-more{
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    background-color: rgb(226,226,226);
+    color: black;
+    padding: 5px 0;
+}
+
+.profile-header:hover{
+    color: #FFCA06;
+}
+
+.profile-header:hover .twitter-icon{
+    visibility: visible;
+}
+.jail{
+    background-color: #ecfee9;
+    width: 100%;
+    height: 400px;
+}
+.son{
+    padding: 40px 20px; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.dat{
+    padding: 80x;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.dat p,a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #79bcd7;
+    text-decoration: none;
+    border-bottom: none;
+}
+.dat a{
+    padding-top: 20px;
+}
+.txt h2{
+    color:#1a85c9;
+}
+.news{
+    background-color: white;
+    width: 100%;
+    height: 600px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 600px;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
+.rights{
+    padding: 10px 10px;
+    color: white;
+}
+.sm {
+    text-align: center;
+    padding-left:120px;
+    gap: 60px;
+    margin-top: 20px;
+}
+.sm i{
+    color: white;
+}
+
+
+</style>
+<body>
+    <div class="main">
+
+        <div class="header">
+
+            <div class="menu">
+                <a href="https://ncbn.info/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/08/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="links">
+                <nav>
+                    <a href="https://ncbn.info/">HOME</a>
+                    <a href="https://ncbn.info/introduction/">ABOUT</a>
+                    <a href="https://ncbn.info/category/live-achivements/">ACHIEVEMENTS</a>
+                    <a href="https://ncbn.info/category/leadership/">LEADERSHIP</a>
+                    <a href="https://ncbn.info/category/latest-news/">NEWS</a>
+                    <a href="https://ncbn.info/category/photos/">GALLERY</a>
+                </nav>
+            </div>
+
+            <div class="icons">
+                <a href="https://ncbn.info/#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://ncbn.info/#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://ncbn.info/#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+
+             <div class="search">
+                <input type="search" placeholder="Search.." >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+
+        </div> <hr>
+
+        <div class="cbnimg">
+
+            <h1>Nara Chandrababu Naidu is an Indian <br> politician hailed for his futuristic <br> outlook.</h1>
+                <h4>In a public life spanning for more than four decades, he has to his credit <br> many trail-blazing initiatives that brought about revolutionary changes in the <br>economic and social life of the people. Known for embracing technology to <br> make governance people-friendly, he has been a pioneer in furthering the <br> knowledge economy in the country, benefiting many generations of <br> countless young men and women.</h4>
+            
+                <div class="btn">
+
+                    <a href="https://ncbn.info/introduction/">
+                    <button>READ MORE</button></a>
+
+                </div>
+
+        </div>
+
+        <div class="news">
+
+            <div class="latest">
+                <div class="a1">
+                    <h3>LATEST NEWS</h3>
+                </div>
+                <div class="a2">
+                    <a href="https://ncbn.info/news/"><h3>VIEW ALL</h3></a>
+                </div>
+            </div>
+
+            <div class="imgs">
+
+                <div class="img1">
+                    <a href="https://ncbn.info/cyclone-michaung-ysrcp-govt-failed-to-prevent-large-scale-destruction-of-crops-alleges-chandrababu-naidu/">
+                    <img src="https://ncbn.info/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-08-at-4.57.37-PM-800x534.jpeg" alt="" >
+                    <h3>cyclone-michaung-ysrcp-govt-failed-to-prevent-large-scale-destruction-of-crops-alleges-chandrababu-naidu.....</h3>
+                    </a>
+                    <p>M Sambasiva Rao | The Hindu | 8 December 2023 <br>The YSR Congress Party (YSRCP) ..... </p>
+                    <div class="aa">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o1">
+                        <div class="o2">
+                            <h3>December 9, 2023</h3>
+                        </div>
+                        <div class="o3">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img2">
+                    <a href="https://ncbn.info/chandrababu-naidu-flags-serious-lapses-in-draft-electoral-rolls-in-andhra-pradesh/">
+                    <img src="https://ncbn.info/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-08-at-6.53.21-PM-800x533.jpeg" alt="" >
+                    <h3>Chandrababu Naidu flags ‘serious lapses’ in draft electoral rolls in Andhra Pradesh.....</h3>
+                    </a>
+                    <p>GVR Subba Rao | The Hindu | 8 December 2023 The Telugu Desam Party (TDP) has..... </p>
+                    <div class="ab">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o4">
+                        <div class="o5">
+                            <h3>December 9, 2023</h3>
+                        </div>
+                        <div class="o6">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="img3">
+                    <a href="https://ncbn.info/rousing-reception-to-chandrababu-naidu-at-begumpet-airport-in-hyderabad/">
+                    <img src="https://ncbn.info/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-31-at-6.45.23-PM-scaled-e1698930773934-800x421.jpeg" alt="" >
+                    <h3>Rousing reception to Chandrababu Naidu at Begumpet airport in Hyderabad.....</h3>
+                    </a>
+                    <p>The Hindu | Nov 1, 2023 Fifty-three days after being arrested for allegedly..... </p>
+                    <div class="ac">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o7">
+                        <div class="o8">
+                            <h3>November 2, 2023</h3>
+                        </div>
+                        <div class="o9">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img4">
+                    <a href="https://ncbn.info/chandrababu-naidu-walks-out-of-jail-on-interim-bail-after-50-days/">
+                    <img src="https://ncbn.info/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-31-at-4.27.49-PM-e1698752328488-800x540.jpeg" alt="" >
+                    <h3>Chandrababu Naidu walks out of jail on interim bail after 50 days.....</h3>
+                    </a>
+                    <p>The News Minute | 31 October 2023 Former <br><br>Andhra Pradesh Chief Minister N..... </p>
+                    <div class="ad">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o10">
+                        <div class="o11">
+                            <h3>November 2, 2023</h3>
+                        </div>
+                        <div class="o12">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- <div class="gallery-section">
+
+            <div class="gallery-left">
+
+                <div class="gallery-head">
+                    <h2>PHOTO GALLERY</h2>
+                    <a href="#">VIEW ALL</a>
+                </div>
+
+                <div class="photos">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/08/img01.jpg" alt="" height="250px" width="250px">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/08/img02.jpg" alt="" height="250px" width="250px">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/08/img06.jpg" alt="" height="250px" width="250px">
+                </div>
+
+            </div>
+
+            <div class="gallery-right">
+            Twitter/X embed or iframe goes here
+            </div>
+
+        </div> -->
+
+        <div class="gallery-section">
+
+            <div class="gallery-left">
+
+                <div class="gallery-header">
+                    <h3>PHOTO GALLERY</h3>
+                    <h5>VIEW ALL</h5>
+                 </div>
+
+            <div class="gallery-images">
+
+            <div class="gallery-card card1">
+                <h3>Chandrababu Naidu at Party Office,...</h3>
+            </div>
+
+            <div class="gallery-card card2">
+                <h3>NCBN at the first swearing-in of NTR</h3>
+            </div>
+
+                <div class="gallery-card card3">
+                <h3>NCBN as a student at SV University</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="twitter-feed">
+
+        <div class="profile-header">
+
+            <div class="profile-image">
+                <div class="twitter-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="profile-details">
+
+                <div class="profile-title">
+                    <h4>N Chandrababu Naidu</h4>
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <p class="follow-btn">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        Follow
+                    </p>
+                </div>
+
+                <p>
+                    Chief Minister of Andhra Pradesh | Member of Legislative Assembly, Kuppam | President, Telugu Desam Party
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="tweet-card">
+
+            <img src="https://pbs.twimg.com/profile_images/1661933747271524352/RpQ2zGnQ_normal.jpg"
+                 alt=""
+                 width="50"
+                 height="50"
+                 style="margin-top:10px;">
+
+            <div class="tweet-content">
+
+                <div class="tweet-header">
+                    <h5>N Chandrababu Naidu</h5>
+                    <i class="fa-solid fa-circle-check" style="color:skyblue;"></i>
+                    <p>@ncbn</p>
+                    <p>1 Jul</p>
+                    <i class="fa-brands fa-x-twitter" id="tweet"></i>
+                </div>
+
+                <p class="tweet-text">
+                    On the occasion of Doctors' Day, I extend my heartfelt wishes and express my deepest gratitude to all our doctors. Their dedication to humanity and commitment to healing are truly inspiring and admirable. Even in the most challenging times, they continue to serve with compassion.
+                </p>
+
+                <div class="tweet-actions">
+
+                    <i class="fa-regular fa-comment"></i>
+
+                    <p>
+                        <i class="fa-solid fa-retweet"></i> 86
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-heart"></i> 556
+                    </p>
+
+                    <p>X</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+                <div class="load-more">
+            Load More
+                </div>
+
+            </div>
+
+        </div>
+
+         <div class="news">
+
+            <div class="latest">
+                <div class="a1">
+                    <h3>ACHIEVEMENTS</h3>
+                </div>
+                <div class="a2">
+                    <a href="https://ncbn.info/news/"><h3>VIEW ALL</h3></a>
+                </div>
+            </div>
+
+            <div class="imgs">
+
+                <div class="img1">
+                    <a href="https://ncbn.info/vizag-will-become-countrys-fintech-hub-in-future-n-chandrababu-naidu/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/10/franklin-templeton-inauguration.jpg" alt="" >
+                    <h3>Vizag will become country’s fintech hub in future: N Chandrababu Naidu.....</h3>
+                    </a>
+                    <p>(Economic Times, Mar 29, 2018) Andhra Pradesh Chief Minister N Chandrababu Naidu today said ..... </p>
+                    <div class="aa">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o1">
+                        <div class="o2">
+                            <h3>October 28, 2022</h3>
+                        </div>
+                        <div class="o3">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img2">
+                    <a href="https://ncbn.info/vajpayee-inaugurates-international-school-of-business-in-hyderabad/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/11/isb.png" alt="" >
+                    <h3>Vajpayee Inaugurates International School of Business in Hyderabad.....</h3>
+                    </a>
+                    <p>PIB | December 02, 2001 “India is becoming a ” Young Nation” in a literal sense of the word. In twenty years from now,..... </p>
+                    <div class="ab">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o4">
+                        <div class="o5">
+                            <h3>November 10, 2022</h3>
+                        </div>
+                        <div class="o6">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="img3">
+                    <a href="https://ncbn.info/bill-gates-recalls-first-meeting-with-naidu-20-years-ago/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/11/cbn-with-bill-gates-800x450.jpg" alt="" >
+                    <h3>Bill Gates recalls first meeting with Naidu 20 years ago.....</h3>
+                    </a>
+                    <p>Firstpost | November 20, 2017 Microsoft Founder Bill Gates on Friday said he was really excited at meeting Andhra Pradesh..... </p>
+                    <div class="ac">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o7">
+                        <div class="o8">
+                            <h3>November 2, 2023</h3>
+                        </div>
+                        <div class="o9">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img4">
+                    <a href="https://ncbn.info/chandrababu-naidu-looks-east-to-revive-andhra-pradesh/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/11/japan-visit.jpg" alt="" width="250px" >
+                    <h3>Chandrababu Naidu looks east to revive Andhra Pradesh.....</h3>
+                    </a>
+                    <p>ogendra Kalavalapalli | LiveMint.com | June 02, 2015 Electioneering was at its peak in Japan when Andhra Pradesh (AP) chief minister N..... </p>
+                    <div class="ad">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o10">
+                        <div class="o11">
+                            <h3>November 16, 2022</h3>
+                        </div>
+                        <div class="o12">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+            <div class="jail">
+                <div class="son">
+                    <div class="imgg">
+                        <a href="">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-31-at-5.02.28-PM-scaled.jpeg" alt="" height="300px" width="500px">
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <h2>Chandrababu Comes Out After 52 Days</h2>
+                        <h1>Chandrababu Naidu released from Central Prison, Rajahmundry prison, on interim bail.</h1>
+                        <h4>Chandrababu Naidu walks out of the gates of the Rajahmundry Central Prison to meet a beaming grandson <br>Devansh.</h4>
+                        <div class="dat">
+
+                        
+                        <p>Oct 31, 2023</p>
+                        <a href="https://ncbn.info/chandrababu-naidu-walks-out-of-jail-on-interim-bail-after-50-days/">Read more</a>
+                        </div>    
+                    </div>
+
+                </div>
+
+            </div>
+       
+       <div class="news">
+
+            <div class="latest">
+                <div class="a1">
+                    <h3>ACHIEVEMENTS</h3>
+                </div>
+                <div class="a2">
+                    <a href="https://ncbn.info/news/"><h3>VIEW ALL</h3></a>
+                </div>
+            </div>
+
+            <div class="imgs">
+
+                <div class="img1">
+                    <a href="https://ncbn.info/biotechnology-policy-2001-framed-under-naidu-government/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/11/biotech.png" alt="" >
+                    <h3>Biotechnology Policy (2001) framed under Naidu government.....</h3>
+                    </a>
+                    <p>Govt of AP | Chandrababu Naidu This is the full text of the Andhra Pradesh Biotechnology Policy: 2001, released by the State Chief Minister, ..... </p>
+                    <div class="aa">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o1">
+                        <div class="o2">
+                            <h3>November 17, 2022</h3>
+                        </div>
+                        <div class="o3">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img2">
+                    <a href="https://ncbn.info/sample/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/11/babu-with-vajpayee.jpg" alt="" >
+                    <h3>A triumph of alliance arithmetic – An analysis of 1998 elections.....</h3>
+                    </a>
+                    <p>CSDS Team with K.C. Suri | Frontline | Nov 06, 1999 IT is easy to read too much into the victory of the Telugu Desam Party led by N. Chandrababu ..... </p>
+                    <div class="ab">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o4">
+                        <div class="o5">
+                            <h3>November 14, 2022</h3>
+                        </div>
+                        <div class="o6">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="img3">
+                    <a href="https://ncbn.info/cyberbabu-of-hyderabad/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/10/cbn2.jpg" alt="" >
+                    <h3>Cyberbabu of Hyderabad – Naidu’s Little Known Watershed Mission....</h3>
+                    </a>
+                    <p>Down to Earth | 15 February 1999 Chandrababu Naidu is known more for his obsession with technology and computers..... </p>
+                    <div class="ac">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o7">
+                        <div class="o8">
+                            <h3>November 14, 2022</h3>
+                        </div>
+                        <div class="o9">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img4">
+                    <a href="https://ncbn.info/naidu-confident-about-clintons-trip/">
+                    <img src="https://ncbn.info/wp-content/uploads/2022/10/clinton.jpg" alt="" >
+                    <h3>Naidu confident about Clinton’s trip.....</h3>
+                    </a>
+                    <p>Syed Amin Jafri | Rediff.com | November 22, 2002 A high-level US team led by Director (advance programmes) Dan Rosenthal airdashed to Hyderabad .... </p>
+                    <div class="ad">
+                    <a href="https://ncbn.info/author/admin/">admin</a>
+                    </div>
+                    <div class="o10">
+                        <div class="o11">
+                            <h3>November 14, 2022</h3>
+                        </div>
+                        <div class="o12">
+                           <a href="https://ncbn.info/author/admin/">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="rights">
+                <p>&copy; 2026 Copyright &copy; CBN 2025. All rights reserved.</p>
+            </div>
+
+            <div class="sm">
+                <a href="https://ncbn.info/#" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://ncbn.info/#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://ncbn.info/#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
