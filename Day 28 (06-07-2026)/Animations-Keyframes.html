@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        /* position: relative; */
+        height: 100px;
+        width: 100%;
+        background-color: green;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .menu a{
+        font-size: larger;
+        text-decoration: none;
+        border-bottom: none;
+        color: white;
+        padding: 20px;
+        
+    }
+    .menu h1{
+        color: white;
+        padding-left: 50px;
+        text-shadow: 3px 3px 4px black;
+    }
+    nav{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+    gap: 20px;
+    }
+    .menu a:hover{
+        color:rgb(240, 98, 98);
+        border-bottom: 1px solid rgb(240, 98, 98);
+    }
+    .hero{
+        height: 200px;
+        width: 100%;
+        background-color: bisque;
+    }
+   .ani{
+    color: brown;
+    text-align: center;
+    padding-top: 40px;
+   }
+   .ani h1{
+    font-family: 'Times New Roman', Times, serif;
+   }
+   .ani h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   .key{
+    margin-bottom: 0;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    }
+
+    .keys{
+    text-align: center;
+    color: brown;
+    }
+    
+   .sub{
+    display: flex;
+    gap: 300px;
+    }
+
+    .sub1,
+    .sub2{
+    text-align: center;
+    }
+
+    .sub1 pre,
+    .sub2 pre{
+    font-size: small;
+    text-align: left;
+    margin-top: 10px;
+    }
+    .syn{
+     position: relative;
+        background-color: bisque;
+        height: 400px;
+        width: 100%;
+        margin-top: 0;
+    }
+    .syn h1{
+        color: brown;
+        padding-left: 50px;
+    }
+    .syn1 pre,
+    .syn2 pre{
+        color: brown;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    }
+   .syn1,
+    .syn2{
+    width: 45%;
+    }
+   .synn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+    .syn1 pre{
+        font-size: larger;
+    }
+     .syn2 pre{
+        font-size: larger;
+    }
+    .synn h2{
+        color: brown;
+    }
+    .pract{
+        background-color: bisque;
+        height: 600px;
+        width: 100%;
+    }
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        border-radius: 50%;
+        border: 1px solid red;
+       
+
+        animation: left 2s ease-in 2s 5;
+    }
+    @keyframes left{
+        from{
+            left:0;
+        }
+        to{
+            left: 300px;
+        }
+    }
+    .box2{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        border-radius: 50%;
+        border: 2px solid red;
+        border-top: 4px solid yellow;
+        top: 70px;
+       
+
+        animation: right 5s linear 4s 5 reverse;
+    }
+    @keyframes right{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="main">
+
+        <div class="header">
+
+            <div class="menu">
+                <h1>CSS Tutorial Point</h1>
+                <nav>
+                    <a href="">Basic CSS</a>
+                    <a href="../Day 28 (06-07-2026)/animations.html">Animations</a>
+                    <a href="../Day 28 (06-07-2026)/Pesudoelemts.html">Pseudo Elements</a>
+                    <a href="">More..</a>
+                </nav>
+            </div>
+
+        </div>
+
+
+        <div class="hero">
+
+            <div class="ani">
+                <h1>Animations</h1>
+                <h4>Animations are used to move/change elements automatically without hover or click</h4>
+            </div>
+
+        </div> <hr>
+
+
+        <div class="key">
+
+            <div class="keys">
+                <h1>@Keyframes</h1>
+                <h4>A Keyframe is used to define the different stages of an animations</h4>
+                    <br>
+                    <h2>A Keyframe contains two stages</h2>
+           
+                <div class="sub">
+
+                    <div class="sub1">
+                        <h2>1. Two Stages Syntax</h2>
+                        <h3>In this we only have "from" and "to"</h3>
+                        <pre>
+                            @Keyframes animationName{ <br>
+                                from{ <br>
+                                    /Start/ <br>
+                                } <br>
+                                to{ <br>
+                                    /End/ <br>
+                                } <br>
+                            } <br>
+                        </pre> 
+                    </div>
+
+                    <div class="sub2">
+                        <h2>2. Three or more Stages Syntax</h2>
+                        <h3>In this we have % syntax</h3>
+                        <pre>
+                            @Keyframes animationName{ <br>
+                                0%{ <br>
+                                    /Start/ <br>
+                                } <br>
+                                50%{ <br>
+                                    /Middle/ <br>
+                                } <br>
+                                100%{ <br>
+                                    /End/ <br>
+                                } <br>
+                            } <br>
+                        </pre>
+                </div>  
+
+            </div>    
+            </div>
+
+        </div> <hr>
+
+        <div class="syn">
+            <h1><i>CSS Animations + Keyframes</i></h1>
+            <div class="synn">
+                <div class="syn1">
+                    <h2>Syntax</h2>
+                    <pre>
+                    selector{
+                    animation-name : name;
+                    animation-duration : time;
+                    animation-iteration-count : number;
+                    animation-timing-function : ease | ease-in | linear | etc. 
+                    animation-delay : time;
+                    animation-direction : normal | reverse ;
+                    alernate;
+                        }
+                    </pre>
+                </div>
+
+                <div class="syn2">
+                    <h2>Keyframes Syntax</h2>
+                    <pre>
+                        @keyframes animationName{
+                            from{
+                                property : value;
+                            }
+                            to{
+                                property : value;
+                            }      
+                        }
+        
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="pract">
+            <div class="box1"> <br> <br> <br> <br>
+                <div class="box2"></div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
