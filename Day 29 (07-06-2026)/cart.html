@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapDeal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(252, 231, 205);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #81ace6;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            color: rgb(57, 12, 63);
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        header input {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        header input:focus {
+            color: rgb(255, 50, 50);
+            background-color: rgb(255, 223, 154);
+        }
+
+        nav a {
+            color: rgb(131, 0, 0);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: rgb(255, 255, 48);
+            border-bottom: 1px solid rgb(255, 255, 48);
+        }
+
+        nav a:visited {
+            /* color: purple; */
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+
+        }
+
+        .card {
+            width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            transition: 0.6s;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+            /* transform: rotate(5deg);
+            transform: scale(1.05); */
+            opacity: 70%;
+        }
+
+        .card:first-child {
+            border: 3px solid rgb(255, 44, 37);
+        }
+
+        .card:last-child {
+            border: 3px dotted rgb(50, 69, 245);
+        }
+
+        .card:last-child:hover {
+            transform: scale3d(1.2, 1.1, 3);
+        }
+
+        .card:nth-child(2) {
+            background: #ff99d1;
+        }
+
+        .card:nth-child(2):hover {
+            transform: translateX(-20px);
+            background: #ffb7df;
+        }
+
+
+        .card:nth-child(3) {
+            border: 5px double rgb(65, 104, 7);
+            background: #d3ffff;
+            color: rgb(238, 88, 88);
+        }
+
+        .card:nth-child(3):hover {
+            transform: rotate(20deg);
+
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+        }
+
+
+        .card p {
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        .price {
+            margin: 15px 0;
+        }
+
+        .offer {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 25px;
+            background: #ebff34;
+            border: none;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            animation: zoom 1s infinite;
+        }
+
+        @keyframes zoom {
+
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+
+        }
+
+        button:hover {
+            background: #ff4810;
+        }
+
+        button:active {
+            background-color: rgb(222, 255, 34);
+        }
+
+
+        footer {
+            background: #172337;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SnapDeal</div>
+        <div class="Products">
+            <input type="text" placeholder="Search or ask a question">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Mobiles</a>
+            <a href="#">Electronics</a>
+            <a href="#">Footwear</a>
+            <a href="#">LOGIN</a>
+    </header>
+
+    <section class="products">
+
+        <div class="card">
+
+            <img src="../imports/iphone_17_pro.avif">
+            <h2>Iphone 17 pro</h2>
+            <p>Performance Without Any Compromise</p>
+
+            <div class="price">
+                <span class="offer">₹1,17,899</span>
+                <del>₹1,29,999</del>
+            </div>
+
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXwf1PpVi1d3gm-o29Uhkw1zfU2Mww1NhHbCzTZcQrQ&s=10">
+            <h2>Nike Air Jordons Retro High OG</h2>
+            <p>Game. Style. Legacy. Forever.</p>
+
+            <div class="price">
+                <span class="offer">₹46,999</span>
+                <del>₹37,999</del>
+            </div>
+
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+
+            <img src="https://m.media-amazon.com/images/I/61Lb9ADPwmL._AC_UF1000,1000_QL80_.jpg">
+            <h2>MB PR Whey Protein</h2>
+            <p>Recover Better Train Harder</p>
+
+            <div class="price">
+                <span class="offer">₹6,599</span>
+                <del>₹7,699</del>
+            </div>
+
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+
+            <img src="https://m.media-amazon.com/images/I/81tG+XKFA3L.jpg">
+            <h2>Axor Apex Helmet</h2>
+            <p>Safety Without Compromise</p>
+
+            <div class="price">
+                <span class="offer">₹3499</span>
+                <del>₹5999</del>
+            </div>
+
+            <button>Buy Now</button>
+        </div>
+
+    </section>
+
+    <footer>
+        Copyright © 2026 | &copy;All Rights Reserved | Designed by Nithin Yellam
+
+    </footer>
+
+</body>
+
+</html>
