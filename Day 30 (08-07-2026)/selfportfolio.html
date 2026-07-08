@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            color: rgb(0, 0, 0);
+            background-color: rgb(176, 231, 231);
+            padding: 5px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .text h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* animation: move 3s linear 0.5s infinite forwards; */
+        }
+        /* @keyframes move{
+            from{
+                left: 0;
+            }
+            to{
+                left: 200px;
+            }
+        } */
+        .header h2::after{
+            content: "🖋";
+        }
+        h2::before{
+            /* content: "✒"; */
+        }
+        h2::first-letter{
+            font-size:50px;
+            font-weight: bold;
+            color: brown;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: rgb(255, 60, 0);
+            border-bottom:1px solid rgb(255, 116, 23);
+            transition-duration: 1s;
+            transform: translateY(-5px);
+            transform: scale(1.3);
+        }
+
+        .intro {
+            background-color: rgb(226, 104, 104);
+            height: 250px;
+            display: flex;
+        }
+
+        .intro img {
+            border-radius: 50%;
+            border: 6px double rgb(230, 230, 230);
+            margin-left: 300px;
+            margin-top: 20px;
+           
+        }
+       
+        .intro img:hover{
+            cursor: pointer;
+            animation: zoom 2s ease-in  2 ;
+        }
+         @keyframes zoom{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        h4 {
+            margin: 0;
+            color: rgb(2, 2, 138);
+
+
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .text {
+            display: grid;
+            /* grid-template-rows: repeat(1fr); */
+            margin-left: 30px;
+            align-content: center;
+        }
+        .text p::selection{
+            color: rgb(255, 240, 29);
+            background-color: black;
+        }
+
+        .text button {
+            width: 80px;
+            color: rgb(0, 0, 0);
+            background-color: rgba(248, 245, 43, 0.945);
+            padding: 10px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation:zoom 1s linear  infinite ;
+        }
+
+
+        .skills-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .myskills {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            text-align: center;
+        }
+
+        .skill i {
+            color: rgb(236, 61, 61);
+            font-size: 50px;
+            animation: bounce 2s ease-in-out  infinite ;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+
+        .skill p {
+            margin-top: 10px;
+            color: rgb(123, 51, 255);
+        }
+
+        .projects {
+            background-color:rgb(176, 231, 231);
+            height: 500px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .line {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            gap: 20px;
+        }
+
+        .box1 {
+            background-color: rgb(235, 217, 217);
+            width: 300px;
+            height: 400px;
+            border-radius: 5%;
+            animation: transx 2s linear infinite;
+        }
+        @keyframes transx{
+           0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(30px);
+            }
+            50%{
+                transform: translateX(-30px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+
+        .box1 img {
+            border-radius: 5% 5% 0% 0%;
+        }
+
+        .box1 button {
+            width: 80px;
+            color: rgb(0, 0, 0);
+            background-color: rgba(248, 245, 43, 0.945);
+            padding: 10px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 80px;
+            width: 150px;
+        }
+        .box1 button:active{
+            background-color: red;
+            transform: scale(0.95);
+        }
+
+        .box2 {
+            background-color: rgb(235, 217, 217);
+            width: 300px;
+            height: 400px;
+            border-radius: 5%;
+            animation: transx 2s linear infinite;
+        }
+         @keyframes transx{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(30px);
+            }
+            50%{
+                transform: translateX(-30px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+
+
+        .box2 img {
+            border-radius: 5% 5% 0% 0%;
+        }
+
+        .box2 button {
+            width: 80px;
+            color: rgb(0, 0, 0);
+            background-color: rgba(248, 245, 43, 0.945);
+            padding: 10px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 80px;
+            width: 150px;
+        }
+         .box2 button:active{
+            background-color: red;
+            transform: scale(0.95);
+        }
+
+        .box3 {
+            background-color: rgb(235, 217, 217);
+            width: 300px;
+            height: 400px;
+            border-radius: 5%;
+            animation: transx 2s linear infinite;
+        }
+         @keyframes transx{
+           0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(30px);
+            }
+            50%{
+                transform: translateX(-30px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+
+
+        .box3 img {
+            border-radius: 5% 5% 0% 0%;
+        }
+
+        .box3 button {
+            width: 80px;
+            color: rgb(0, 0, 0);
+            background-color: rgba(248, 245, 43, 0.945);
+            padding: 10px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 80px;
+            width: 150px;
+        }
+         .box3 button:active{
+            background-color: red;
+            transform: scale(0.95);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .contact {
+            background-color: rgb(226, 104, 104);
+            height: 100px;
+        }
+
+        .contact h4 {
+            text-align: center;
+            font-size: x-large;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .forms {
+            text-align: center;
+        }
+
+        .forms button {
+            width: 80px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(205, 255, 23);
+            padding: 10px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 150px;
+        }
+        .forms button:active{
+            background-color: black;
+            color: yellow;
+        }
+
+        input {
+            border-radius: 5px 5px 5px 5px;
+            padding: 10px 10px;
+        }
+        input:focus{
+            background-color: rgb(255, 119, 28);
+        }
+        input::selection{
+            color: rgb(240, 38, 38);
+        }
+        input::placeholder{
+            color: rgb(255, 252, 75);
+            
+        }
+
+        .footer {
+            display: flex;
+            /* margin-left: 700px; */
+            /* grid-template-columns: (1fr,1fr,1fr,1fr); */
+            gap: 10px;
+            height: 50px;
+            color: white;
+            background-color: rgb(20, 20, 95);
+
+        }
+        .footer P{
+            padding-top: 5px;
+            padding-left: 30px;
+        }
+
+        /* .footer i{
+    margin-left: 700px;
+    /* display: grid;
+    grid-template-columns: repeat(1fr); */
+
+        .a {
+            margin-top: 10px;
+            margin-left: 900px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h2>PORTFOLIO</h2>
+            <div class="links">
+                <nav>
+                    <a href="#a">HOME</a>
+                    <a href="../Day 30 (08-07-2026)/aboutme.html">ABOUT</a>
+                    <a href="#c">SERVICES</a>
+                    <a href="../Day 30 (08-07-2026)/projects.html">PROJECTS</a>
+                    <a href="../Day 30 (08-07-2026)/contactme.html">CONTACT</a>
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="intro">
+            <img src="../imports/nithin passport size photo.jpeg" alt="" width="200px" height="200px">
+
+            <div class="text">
+                <h1>Hi, I'm Nithin</h1>
+                <h4>Aspirant Software Engineer</h4>
+                <p>I built responsive and User friendly websites <br> using HTML, CSS, Java Script and modern tools</p>
+                <button>Contact Me</button>
+            </div>
+
+        </div>
+
+        <div class="skills-section">
+            <h2>MY SKILLS</h2>
+
+            <div class="myskills">
+
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-java"></i>
+                    <p>Java</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="line">
+                <div class="box1">
+                    <img src="https://images.stockcake.com/public/4/b/b/4bb5eac8-6bfa-47ab-ad69-87cd6e0b23d4_large/laptop-on-desk-stockcake.jpg"
+                        alt="" width="300px" height="200px">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio site <br> built using HTML and CSS</p>
+                   <a href="../Day 30 (08-07-2026)/projects.html"> <button>View Project</button> </a>
+                </div>
+
+                <div class="box2">
+                    <img src="https://market-resized.envatousercontent.com/previews/files/487209908/03_Preview.png?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=bad48b8fbfc26b4e07b42e85ff32cc0a333fb3331001f31594828b4c1a81d934"
+                        alt="" width="300px" height="200px">
+                    <h3>Dashboard</h3>
+                    <p>An Admin dashboard with charts <br> and analytics</p>
+                    <a href="../Day 30 (08-07-2026)/projects.html"><button>View Project</button></a>
+                </div>
+                <div class="box3">
+                    <img src="https://codeastro.com/wp-content/uploads/2023/12/CodeAstro-Thumbnail_Ecommerce-Website-PHP-Laravel.jpg"
+                        alt="" width="300px" height="200px">
+                    <h3>E-Commerce Site</h3>
+                    <p>A responsive e-commerce website <br> using Bootstrap</p>
+                    <a href="../Day 30 (08-07-2026)/projects.html"><button>View Project</button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact">
+            <div>
+                <h4>CONTACT ME</h4>
+                <div class="forms">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Mail">
+                    <input type="text" placeholder="Your Message">
+                    <button>SEND MESSAGE </button>
+                    <!-- <input type="submit" value="SEND MESSAGE"> -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>&copy;Portfolio 2026, &copy; All Rights Reserved.</p>
+            <div class="a">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-github"></i>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
